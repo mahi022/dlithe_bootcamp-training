@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: rgb(26, 65, 81);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(4, 42, 57);
+            color: white;
+        }
+
+        img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 40%;
+        }
+
+        .redirect-button {
+            background-color: rgb(26, 65, 81);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .redirect-button:hover {
+            background-color: #14a7eb;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Registration Page</h1>
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Form</th>
+        </tr>
+        <tr>
+            <td rowspan="4"><img src="download.png" alt="Profile Image"></td>
+            <td><form >
+                <label for="fname">username name:</label><br>
+                <input type="text" id="fname" name="fname" ><br>
+            </td>
+        </tr>
+        <tr>
+            <td><form >
+                <label for="fname">Email:</label><br>
+                <input type="text" id="fname" name="fname"  required><br>
+            </td>
+        </tr>
+        <tr>
+            <td><form >
+                <label for="fname">password:</label><br>
+                <input type="text" id="fname" name="fname" ><br></td>
+        </tr>
+    </table>
+    <button onclick="redirectToNextPage()">Submit</button>
+
+    <script>
+    function redirectToNextPage() {
+        // Redirect to third.html
+        window.location.href = "third.html";
+    }
+    </script>
+
+</div>
+</body>
+</html>
